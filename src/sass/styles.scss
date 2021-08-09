@@ -1,0 +1,47 @@
+@import './header.scss';
+@import './greetings.scss';
+@import './geometry.scss';
+
+:root{
+    --background: #0a192f;
+    --green: #64ffda;
+    --white: #e6f1ff;
+    --LightestNavy:  #233554;
+    --LightNavy: #112240;
+
+    --wrapperSpace: 1.5em;
+}
+
+body{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+    background: var(--background);
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: var(--white);
+}
+
+p, label{
+    color: var(--white)
+}
+
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    padding: 0 var(--wrapperSpace);
+    max-width: calc(1115px + 1.5em);
+    margin: auto;
+    width: 100%;
+    box-sizing: border-box;
+}

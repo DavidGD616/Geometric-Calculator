@@ -4,9 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Math Page|Geometric Calculator</title>
+    <title>MathBot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300&family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/styles.css">
 </head>
 <body>
-    
+    <header class="header">
+        <h1 class="header__title">MathBot</h1>
+    </header>
+    <section>
+        <div class="wrapper">
+        <div class="greatings">
+            <h2 class="greatings__h2">
+                Hi, I'm MathBot and I'll help you with math
+            </h2>
+        </div>
+        <div class="greatings__solutions">
+            <p class="greatings__p">What are we going to calculate today?</p>
+            <ul class="greatings__btns">
+                <li class="greatings__btns-li"><a href="#">Geometry</a></li>
+                <li class="greatings__btns-li"><a href="#">Discounts</a></li>
+                <li class="greatings__btns-li"><a href="#">Statistics</a></li>
+                <li class="greatings__btns-li"><a href="#">Analysis</a></li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <div class="wrapper">
+        <h2>Geometry</h2>
+        <div class="boxes square">
+            <div class="square__title">
+            <img src="./static/images/square.png" alt="square">
+            <h3>Square</h3>
+            </div>
+            <label for="">How long is each side of your square?</label>
+            <div class="square__inputs">
+            <input type="number">
+            <select name="measure" id="">
+                <option value="">Cm</option>
+                <option value="">Meters</option>
+                <option value="">Inches</option>
+                <option value="">Miles</option>
+            </select>
+            </div>
+            <div class="square__btns">
+            <button type="button">Get perimeter</button>
+            <button type="button">Get area</button>
+            </div>
+        </div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        </div>
+    </section>
 </body>
 </html>

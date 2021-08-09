@@ -1,0 +1,50 @@
+.square{
+    &__title{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        img{
+            height: 50px;
+            padding-right: 8px;
+        }
+    }
+    &__inputs{
+        margin-top: 20px;
+        input{
+            width: 50vw;
+            background: var(--LightNavy);
+            border: none;
+            border-radius: 3px;
+            height: 40px;
+            outline: none;
+            color: var(--white);
+        }
+        select{
+            background: var(--LightNavy);
+            color: var(--white);
+            outline: none;
+            border: none;
+            height: 40px;
+            width: 20vw;
+            border-radius: 3px;
+        }
+    }
+    &__btns{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 30px;
+        button{
+            background: transparent;
+            color: var(--white);
+            border: 1px solid var(--green);
+            border-radius: 3px;
+            padding: 8px 13px 8px 10px;
+            color: var(--green);
+            font-weight: bold;
+        }
+        button:last-child{
+            margin-left: 20px;
+        }
+    }
+}

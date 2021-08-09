@@ -1,0 +1,30 @@
+.greatings{
+    margin-bottom: 2.5em;
+    &__h2{
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    &__p{
+        font-size: 1.2em;
+        font-weight: 400;
+    }
+    &__btns{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+        &-li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // border: 1px solid red;
+            padding: 1.3em;
+            background-color: var(--LightestNavy);
+            border-radius: 5px;
+            box-shadow: 0px 10px 30px -15px rgb(2 12 27 / 70%);
+        }
+        &-li:hover{
+            border: 1px solid var(--green);
+        }
+    }
+}

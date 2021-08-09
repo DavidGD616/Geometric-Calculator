@@ -1,0 +1,11 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__title{
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 900;
+        font-size: 2em;
+        color: var(--green);
+    }
+}
