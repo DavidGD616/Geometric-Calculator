@@ -1,4 +1,8 @@
-.square{
+.geometry{
+    margin-top: 100px;
+}
+
+.figure{
     &__title{
         display: flex;
         justify-content: flex-start;
@@ -34,17 +38,13 @@
         justify-content: flex-start;
         align-items: center;
         margin-top: 30px;
-        button{
-            background: transparent;
-            color: var(--white);
-            border: 1px solid var(--green);
-            border-radius: 3px;
-            padding: 8px 13px 8px 10px;
-            color: var(--green);
-            font-weight: bold;
-        }
-        button:last-child{
-            margin-left: 20px;
-        }
     }
+}
+
+
+.br{
+    height: 3px;
+    background-color: var(--LightestSlate);
+    margin: 50px 0 100px 0;
+    width: 80%;
 }

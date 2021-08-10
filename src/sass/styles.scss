@@ -8,6 +8,8 @@
     --white: #e6f1ff;
     --LightestNavy:  #233554;
     --LightNavy: #112240;
+    --greenTransparent: #64FFDA5C;
+    --LightestSlate: #ccd6f6;
 
     --wrapperSpace: 1.5em;
 }
@@ -27,6 +29,10 @@ p, label{
     color: var(--white)
 }
 
+label{
+    font-weight: 900;
+}
+
 a{
     text-decoration: none;
     color: var(--white);
@@ -44,4 +50,27 @@ ul{
     margin: auto;
     width: 100%;
     box-sizing: border-box;
+}
+
+button{
+    background: transparent;
+    color: var(--white);
+    border: 1px solid var(--green);
+    border-radius: 3px;
+    padding: 8px 13px 8px 10px;
+    color: var(--green);
+    font-weight: bold;
+}
+button:last-child{
+    margin-left: 20px;
+}
+button:hover{
+    background: var(--greenTransparent);
+    transition: 0.3s;
+}
+
+.result{
+    position: relative;
+    left: 37%;
+    top: 40px;
 }

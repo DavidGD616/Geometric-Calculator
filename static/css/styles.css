@@ -40,19 +40,23 @@
   border: 1px solid var(--green);
 }
 
-.square__title {
+.geometry {
+  margin-top: 100px;
+}
+
+.figure__title {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.square__title img {
+.figure__title img {
   height: 50px;
   padding-right: 8px;
 }
-.square__inputs {
+.figure__inputs {
   margin-top: 20px;
 }
-.square__inputs input {
+.figure__inputs input {
   width: 50vw;
   background: var(--LightNavy);
   border: none;
@@ -61,7 +65,7 @@
   outline: none;
   color: var(--white);
 }
-.square__inputs select {
+.figure__inputs select {
   background: var(--LightNavy);
   color: var(--white);
   outline: none;
@@ -70,23 +74,18 @@
   width: 20vw;
   border-radius: 3px;
 }
-.square__btns {
+.figure__btns {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   margin-top: 30px;
 }
-.square__btns button {
-  background: transparent;
-  color: var(--white);
-  border: 1px solid var(--green);
-  border-radius: 3px;
-  padding: 8px 13px 8px 10px;
-  color: var(--green);
-  font-weight: bold;
-}
-.square__btns button:last-child {
-  margin-left: 20px;
+
+.br {
+  height: 3px;
+  background-color: var(--LightestSlate);
+  margin: 50px 0 100px 0;
+  width: 80%;
 }
 
 :root {
@@ -95,6 +94,8 @@
   --white: #e6f1ff;
   --LightestNavy: #233554;
   --LightNavy: #112240;
+  --greenTransparent: #64FFDA5C;
+  --LightestSlate: #ccd6f6;
   --wrapperSpace: 1.5em;
 }
 
@@ -111,6 +112,10 @@ h1, h2, h3, h4, h5, h6 {
 
 p, label {
   color: var(--white);
+}
+
+label {
+  font-weight: 900;
 }
 
 a {
@@ -130,6 +135,31 @@ ul {
   margin: auto;
   width: 100%;
   box-sizing: border-box;
+}
+
+button {
+  background: transparent;
+  color: var(--white);
+  border: 1px solid var(--green);
+  border-radius: 3px;
+  padding: 8px 13px 8px 10px;
+  color: var(--green);
+  font-weight: bold;
+}
+
+button:last-child {
+  margin-left: 20px;
+}
+
+button:hover {
+  background: var(--greenTransparent);
+  transition: 0.3s;
+}
+
+.result {
+  position: relative;
+  left: 37%;
+  top: 40px;
 }
 
 /*# sourceMappingURL=styles.css.map */
