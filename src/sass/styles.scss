@@ -10,6 +10,7 @@
     --LightNavy: #112240;
     --greenTransparent: #64FFDA5C;
     --LightestSlate: #ccd6f6;
+    --Slate: #8892b0;
 
     --wrapperSpace: 1.5em;
 }
@@ -25,7 +26,7 @@ h1, h2, h3, h4, h5, h6{
     color: var(--white);
 }
 
-p, label{
+p, label, span{
     color: var(--white)
 }
 
@@ -69,8 +70,14 @@ button:hover{
     transition: 0.3s;
 }
 
-.result{
+#result, #result2, #result3{
     position: relative;
-    left: 37%;
+    left: 30%;
+    top: 40px;
+}
+
+#measures, #measures2, #measures3{
+    position: relative;
+    left: 30%;
     top: 40px;
 }

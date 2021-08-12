@@ -39,22 +39,25 @@
             <img src="./static/images/square.png" alt="square">
             <h3>Square</h3>
             </div>
-            <label for="">How long is each side of your square?</label>
+            <form action="">
+            <label for="InputSquare">How long is each side of your square?</label>
             <div class="figure__inputs">
-            <input type="number">
-            <select name="measure" id="">
-                <option value="">Cm</option>
-                <option value="">Meters</option>
-                <option value="">Inches</option>
-                <option value="">Miles</option>
+            <input id="InputSquare" type="number">
+            <select name="" id="measure" onchange="updateMeasure()">
+                <option value="1">Cm</option>
+                <option value="2">Meters</option>
+                <option value="3">Inches</option>
+                <option value="4">Miles</option>
             </select>
             </div>
             <div class="figure__btns">
-            <button type="button">Get perimeter</button>
-            <button type="button">Get area</button>
+            <button type="button" onclick="calculatePerimeterSquare()">Get perimeter</button>
+            <button type="button" onclick="calculateAreaSquare()">Get area</button>
             </div>
-            <label class="result" for="">yes</label>
+            <label id="result" for=""></label>
+            <label id="measures" for=""></label>
             <div class="br"></div>
+            </form>
         </div>
         <div class="boxes">
             <div class="boxes figure">
@@ -63,21 +66,29 @@
                 <h3>Square</h3>
                 </div>
                 <label for="">What are the measurements of your triangle</label>
-                <div class="figure__inputs">
-                <input type="number">
-                <select name="measure" id="">
-                    <option value="">Cm</option>
-                    <option value="">Meters</option>
-                    <option value="">Inches</option>
-                    <option value="">Miles</option>
+                <div class="triangle__inputs">
+                <!-- <form action=""> -->
+                <span>Side A</span>
+                <input id="side-1" type="number">
+                <span>Side B</span>
+                <input id="side-2" type="number">
+                <span>Base</span>
+                <input id="base" type="number">
+                <select name="" id="measure2" onchange="updateMeasure2()">
+                    <option value="1">Cm</option>
+                    <option value="2">Meters</option>
+                    <option value="3">Inches</option>
+                    <option value="4">Miles</option>
                 </select>
                 </div>
                 <div class="figure__btns">
-                <button type="button">Get perimeter</button>
-                <button type="button">Get area</button>
+                <button type="button" onclick="calculatePerimeterTriangle()">Get perimeter</button>
+                <button type="button" onclick="calculateAreaTriangle()">Get area</button>
                 </div>
-                <label class="result" for="">yes</label>
+                <label id="result2" for=""></label>
+                <label id="measures2" for=""></label>
                 <div class="br"></div>
+                <!-- </form> -->
             </div>
         </div>
         <div class="boxes">
@@ -86,10 +97,10 @@
                 <img src="./static/images/circle.png" alt="square">
                 <h3>Square</h3>
                 </div>
-                <label for="">What is the radio of your circle?</label>
+                <label for="InputRadio">What is the radio of your circle?</label>
                 <div class="figure__inputs">
-                <input type="number">
-                <select name="measure" id="">
+                <input id="InputRadio" type="number">
+                <select name="" id="measure3" onchange="updateMeasure3()">
                     <option value="">Cm</option>
                     <option value="">Meters</option>
                     <option value="">Inches</option>
@@ -97,14 +108,17 @@
                 </select>
                 </div>
                 <div class="figure__btns">
-                <button type="button">Get perimeter</button>
-                <button type="button">Get area</button>
+                <button type="button" onclick="calculatePerimeterCircle()">Get perimeter</button>
+                <button type="button" onclick="calculateAreaCircle()">Get area</button>
                 </div>
-                <label class="result" for="">yes</label>
+                <label id="result3" for=""></label>
+                <label id="measures3" for=""></label>
                 <div class="br"></div>
             </div>
         </div>
         </div>
     </section>
+
+    <script src="./src/js/index.js"></script>
 </body>
 </html>
