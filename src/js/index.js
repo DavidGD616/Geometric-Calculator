@@ -130,3 +130,31 @@ function updateMeasure3(){
 
     document.getElementById('measures3').innerHTML = option.text;
 }
+
+
+
+
+
+
+
+
+// DISCOUNTS
+
+function calculatePriceWithDiscount(price, discount){
+    percentWithDiscount = 100 - discount;
+    const priceWithDiscount = (price * percentWithDiscount) / 100;
+    return priceWithDiscount;
+}
+
+// console.log(calculatePriceWithDiscount(120,15))
+
+function onClickButtonPriceDiscount(){
+    const inputPrice = document.getElementById('InputPrice');
+    const priceValue = inputPrice.value;
+    const inputDiscount = document.getElementById('InputDiscount');
+    const discountValue = inputDiscount.value;
+
+    const priceDiscount = calculatePriceWithDiscount(priceValue, discountValue);
+    const resultP = document.getElementById('result4');
+    resultP.innerHTML = priceDiscount.toFixed(2);
+}

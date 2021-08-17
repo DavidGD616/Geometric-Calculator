@@ -119,6 +119,28 @@
   border-radius: 3px;
 }
 
+.discount__inputs {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 30px 0;
+  width: 70vw;
+}
+.discount__inputs input {
+  background: var(--LightNavy);
+  border: 1px solid var(--Slate);
+  border-radius: 3px;
+  height: 40px;
+  outline: none;
+  color: var(--white);
+  margin-bottom: 15px;
+}
+.discount__inputs input:focus {
+  background: var(--background);
+}
+.discount__inputs input:last-child {
+  margin-top: 10px;
+}
+
 :root {
   --background: #0a192f;
   --green: #64ffda;
@@ -188,7 +210,7 @@ button:hover {
   transition: 0.3s;
 }
 
-#result, #result2, #result3 {
+#result, #result2, #result3, #result4 {
   position: relative;
   left: 30%;
   top: 40px;

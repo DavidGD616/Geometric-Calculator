@@ -1,6 +1,7 @@
 @import './header.scss';
 @import './greetings.scss';
 @import './geometry.scss';
+@import './discounts.scss';
 
 :root{
     --background: #0a192f;
@@ -70,7 +71,7 @@ button:hover{
     transition: 0.3s;
 }
 
-#result, #result2, #result3{
+#result, #result2, #result3, #result4{
     position: relative;
     left: 30%;
     top: 40px;
